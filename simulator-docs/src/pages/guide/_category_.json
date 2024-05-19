@@ -1,0 +1,17 @@
+{
+    "position": 1,
+    "label": "guides",
+    "collapsible": true,
+    "collapsed": false,
+    "className": "red",
+    "link": {
+      "type": "generated-index",
+      "title": "Tutorial overview"
+    },
+    "customProps": {
+      "description": "This description can be used in the generated index page."
+    }
+  }
+  
+  
+  

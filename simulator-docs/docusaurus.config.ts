@@ -42,10 +42,7 @@ const config: Config = {
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/facebook/docusaurus',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -57,8 +54,16 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    announcementBar: {
+      id: "Let's cooking",
+      content:
+        'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
+      backgroundColor: '#fafbfc',
+      textColor: '#091E42',
+      isCloseable: false,
+    },
     navbar: {
-      title: 'My Site',
+      title: 'Sui Suimulator',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -68,9 +73,11 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Overview',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/guides', label: 'FAQ', position: 'left'},
+        {to: '/blog', label: 'blog', position: 'left'},
+        {to: '/helloworld', label: 'FAQ', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -95,7 +102,7 @@ const config: Config = {
           items: [
             {
               label: 'Twitter',
-              href: '',
+              href: 'https://x.com/SimulatorSui',
             },
           ],
         },
